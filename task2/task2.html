@@ -29,7 +29,9 @@
     </div>
     <div class="second-article">
       <h2>另一篇文章的一级标题</h2>
-      <h2>另一篇文章的二级标题</h2>
+      <span>另一篇文章二级标题</span>
+      <span>文章作者</span>
+      <span>文章发表时间</span>
       <p>这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落<br/>换行了<br/>这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落<a href="http://ife.baidu.com/" target="block">这里是一个新建页的链接，链接到 ife.baidu.com</a>这是一个很长很长的段落这是一个很长很长的段落<b>这里有个粗体字</b>这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落</p>
       <img src="task1.png" alt="图片">
       <ul>
@@ -112,46 +114,58 @@
         </tbody>
       </table>
     </div>
-    <div class="sidebar">
-      <h2>这里以后是一个侧栏，这是侧栏的标题</h2>
-      <h2>侧栏注册出窗口标题</h2>
+    <aside>
+      <p>这里以后是一个侧栏，这是侧栏的标题</p>
       <form action="">
-        <p>
-          <label for="">请输入邮件地址</label>
+        <div class="e-mail">
+          <label for="emailAddress">请输入邮件地址</label>
           <input type="text" name="email" value="这是一个邮件地址">
-        </p>
-        <p>邮箱地址请按要求输入</p>
-        <p>
+          <p>邮箱地址请按要求输入</p>
+        </div>
+        <div class="password">
           <label for="">请输入密码</label>
-          <input type="text" name="email" value="这是一个邮件地址">
+          <input type="password" >
+        </div>
+        <div class="againPassword">
           <label for="">请重复输入密码</label>
-          <input type="text" name="email" value="这是一个邮件地址">          
-        </p>        
-        <p>密码请为6-16位英文数字</p>
+          <input type="password">       
+          <p>密码请为6-16位英文数字</p>             
+        </div>
+        <div class="sex">
+          <label for="">性别</label>
+          <input type="radio"  id="sport">
+          <label for="sport">男</label>
+          <input type="radio"  id="art">
+          <label for="art">女</label>  
+        </div>
+        <div class="address">
+          <label for="">城市</label>
+          <select name="" id="">
+            <option value="">北京</option>
+            <option value="">上海</option>
+            <option value="">广州</option>
+          </select>    
+        </div>
+        <div class="hobby">
+          <label for="">爱好</label>
+          <input type="checkbox"  id="sport">
+          <label for="sport">运动</label>
+          <input type="checkbox"  id="art">
+          <label for="art">艺术</label>
+          <input type="checkbox"  id="science">
+          <label for="science">运动</label>          
+        </div>
+        <div class="introduction">
+          <label for=""> 个人描述：</label>
+          <textarea name="" id="" cols="10" rows="2">这是一个多行输入框，输入您的个人描述</textarea>
+        </div>
+        <div class="submit">
+          <button>提交</button>
+        </div>
       </form>
-      <form action="">
-        性别：
-        <label for="man">男</label>
-        <input type="radio" value="男" name="gender" id="man" checked="checked">
-        <label for="man">女</label>
-        <input type="radio" value="女" name="gender" id="woman">     
-        <select name="" id="">
-          <option value="">北京</option>
-          <option value="">上海</option>
-          <option value="">广州</option>
-        </select>   
-        爱好：
-        <input type="checkbox"  id="sport">
-        <label for="sport">运动</label>
-        <input type="checkbox"  id="art">
-        <label for="art">艺术</label>
-        <input type="checkbox"  id="science">
-        <label for="science">运动</label>
-        个人描述：
-        <textarea name="" id="" cols="10" rows="2">这是一个多行输入框，输入您的个人描述</textarea>
-        <input type="submit" value="确认提交" />
-      </form>
-    </div>
-    <footer>版本所有&#169;</footer>
+    </aside>
+    <footer>
+        版本所有&#169;
+    </footer>
 </body>
 </html>
