@@ -1,1 +1,36 @@
-task10.css
+html,body {
+    margin: 0;
+}
+.contain {
+    display: -webkit-flex;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contain>div {
+    margin-bottom: 10px;
+    padding: 20px;
+    width: 150px;
+    border: 1px solid #f00;
+}
+.contain>div:first-child {
+    height: 120px;
+}
+.contain>div:nth-child(2) {
+    height: 100px;
+}
+.contain>div:nth-child(3) {
+    height: 40px;
+}
+.contain>div:nth-child(4) {
+    height: 200px;
+    border: 1px solid #0f0;
+}
+@media screen and (max-width:640px){
+    .contain {
+        flex-wrap: wrap;
+    }
+    .contain>div:nth-child(4) {
+        order:-1;
+    }
+}
